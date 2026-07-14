@@ -1,0 +1,42 @@
+# Criar .gitignore com .venv excluído
+cat > .gitignore << 'EOF'
+# Ambientes virtuais - NÃO ENVIAR
+.venv/
+venv/
+env/
+.venv
+venv
+env
+
+# Bases de dados - NÃO ENVIAR
+#chroma_db/
+#*.db
+#*.sqlite
+#*.sqlite3
+
+# Cache Python - NÃO ENVIAR
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ficheiros sensíveis - NÃO ENVIAR
+.env
+.env.*
+*.env
+secrets.yaml
+credentials.json
+
+# Relatórios - OPCIONAL (podes enviar se quiseres)
+relatorio*.md
+
+# IDE - NÃO ENVIAR
+.vscode/
+.idea/
+.DS_Store
+
+# Arquivos temporários - NÃO ENVIAR
+tmp/
+temp/
+*.tmp
+EOF
